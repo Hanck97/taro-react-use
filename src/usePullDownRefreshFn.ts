@@ -6,10 +6,10 @@ const sleep = (ms = 0) => new Promise<void>(resolve => setTimeout(resolve, ms))
 
 /**
  * @description 监听用户下拉刷新事件, 回调完成后自动收起.
- * @param fn 回调
+ * @param fn 执行回调函数
  * @param delay 最短间隔, 默认 300ms.
  */
-export default function usePullDownRefreshFn(fn: () => Promise<any>, delay = 300) {
+export function usePullDownRefreshFn(fn: () => Promise<any>, delay = 300) {
   usePullDownRefresh(
     useCallback(async () => {
       try {

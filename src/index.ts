@@ -1,4 +1,6 @@
-export { default as useThtottle } from './useThrottle';
-export { default as useDebounce } from './useDebounce';
-export { default as useUpdate } from './useUpdate';
-export { default as usePullDownRefreshFn } from './usePullDownRefreshFn';
+export * from './useThrottle';
+export * from './useDebounce';
+export * from './useUpdate';
+export * from './usePullDownRefreshFn';
+export * from './useThrottleFn';
+export * from './useThrottle';

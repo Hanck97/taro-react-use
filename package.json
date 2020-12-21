@@ -1,6 +1,6 @@
 {
   "name": "taro-react-use",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "description": "",
   "templateInfo": {
@@ -8,6 +8,13 @@
     "typescript": true,
     "css": "none"
   },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "docs"
+  ],
   "scripts": {
     "start": "tsc -w --preserveWatchOutput",
     "prebuild": "rimraf dist tsconfig.tsbuildinfo",
