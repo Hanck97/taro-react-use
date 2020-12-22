@@ -1,8 +1,9 @@
 {
   "name": "taro-react-use",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "",
+  "author": "Hanck7",
   "templateInfo": {
     "name": "default",
     "typescript": true,
