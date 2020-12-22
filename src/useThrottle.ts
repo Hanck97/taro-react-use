@@ -7,7 +7,7 @@ import { useThrottleFn } from './useThrottleFn';
  * @param value 
  * @param delay 
  */
-export const useThrottle =(value: string | number | boolean, delay: number = 300)=>{
+export const useThrottle = <T>(value: T, delay: number = 300): T => {
   const [throttled, setThrottled] = useState(value);
 
   const { run } = useThrottleFn(() => {

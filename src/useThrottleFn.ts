@@ -5,7 +5,7 @@ import { useEffect, useRef, useCallback } from 'react';
  * @param fn 
  * @param delay 
  */
-export const useThrottleFn = <T, U extends any[]>(fn: (...args: U) => T, delay: number = 200) => {
+export const useThrottleFn = <T, U extends any[]>(fn: (...args) => T, delay: number = 200) => {
   const _wait = delay || 0;
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const fnRef = useRef(fn);
